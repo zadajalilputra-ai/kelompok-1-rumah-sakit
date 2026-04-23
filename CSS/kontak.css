@@ -1,0 +1,76 @@
+/* ===== RESET ===== */ 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ===== BASE ===== */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #fof7f9;
+    color: #333333;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* ===== LAYOUT ===== */
+main {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px;
+}
+
+/* ===== COMPONENTS ===== */
+.contact-card {
+    background: #ffffff;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    text-align: center;
+    max-width: 550px;
+    width: 100%;
+}
+
+h1 {
+    color: #2c3e50;
+    margin-bottom: 20px;
+    border-bottom: 4px solid #3498db;
+    display: inline-block;
+    padding-bottom: 10px;
+}
+
+.contact-details {
+    margin-top: 25px;
+    text-align: left;
+    background: #f9f9f9;
+    padding: 20px;
+    border: 1px solid #eeeeee;
+    border-radius: 10px;
+    display: inline-block;
+    width: 100%;
+}
+
+.contact-details p {
+    margin-bottom: 10px;
+    font-size: 0.9rem;
+}
+
+.contact-details strong {
+    color: 3498db;
+    display: inline-block;
+    width: 80px; /* Agar label Telepon, Email, Alamat sejajar */
+}
+
+header {
+    width: 100%;
+    padding: 20px;
+    background: white;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    position: absolute;
+    text-align: 0;
+}
