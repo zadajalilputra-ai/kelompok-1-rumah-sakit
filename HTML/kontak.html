@@ -4,33 +4,59 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kontak - RS Kanujoso</title>
-    <link rel="stylesheet" href="../CSS/kontak.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .btn-primary { background-color: #007bff; }
+        .bg-custom-light { background-color: #f0f9ff; } 
+    </style>
 </head>
-<body>
+<body class="bg-custom-light text-gray-800">
+
     <header>
-        <nav aria-label="Main navigation">
-            <a href="beranda.html" class="logo">RS Nama</a>
-            <ul>
+        <nav aria-label="Main navigation" class="flex items-center justify-between px-12 py-4 bg-white shadow-sm">
+            <a href="beranda.html" class="logo">RS KANUJOSO</a>
+            <ul class="flex gap-6">
                 <li><a href="beranda.html">Beranda</a></li>
                 <li><a href="layanan.html">Layanan</a></li>
                 <li><a href="dokter.html">Dokter</a></li>
                 <li><a href="kontak.html">Kontak</a></li>
             </ul>
-            <a href="pendaftaran.html" class="btn-daftar">Daftar Sekarang</a>
+            <a href="pendaftaran.html" class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition">Daftar Sekarang</a>
         </nav>
     </header>
 
     <main>
-        <section class="contact-card">
+        <section class="max-w-4xl mx-auto mt-10 p-6 bg-white shadow-md rounded-lg">
             <h1>Kontak RS Kanujoso</h1>
             <p>Hubungi kami melalui nomor telepon atau email yang tersedia di bawah ini.</p>
 
             <div class="contact details">
-                <p><strong>Telepon:</strong> (0542)873901</p>
-                <p><strong>Email:</strong> info@rsudkanujoso.com</p>
-                <p><strong>Alamat:</strong> Jl. MT Haryono No.656, Balikpapan</p>
+               <p><i class="fas fa-phone-alt"></i> <strong>Telepon:</strong> <a href="tel:0542873901" class="hover:text-blue-600">(0542) 873901</a></p>
+               <p><i class="fas fa-envelope"></i> <strong>Email:</strong> <a href="mailto:info@rsudkanujoso.com" class="hover:text-blue-600">info@rsudkanujoso.com</a></p>
+               <p><i class="fas fa-map-marker-alt"></i> <strong>Alamat:</strong> Jl. MT Haryono No.656, Balikpapan</p> 
+               <p><i class="fas fa-clock"></i> <strong>Jam Operasional:</strong> 24 Jam (IGD) / Senin - Sabtu: 08.00 - 20.00</p>
+               <div class="mt-6">
+    <a href="https://wa.me/628123456789" class="bg-green-500 text-white px-6 py-3 rounded-full font-bold hover:bg-green-600 transition flex items-center w-max shadow-lg">
+        <i class="fab fa-whatsapp mr-2 text-xl"></i> Chat via WhatsApp
+    </a>
+</div>
             </div>
         </section>
+        <div class="mt-8 overflow-hidden rounded-lg shadow-md max-w-4xl mx-auto">
+    <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.922158580237!2d116.87103237588691!3d-1.214470698773767!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2df14660681c2f1f%3A0x69600a9693f416d8!2sRSUD%20dr.%20Kanujoso%20Djatiwibowo!5e0!3m2!1sid!2sid!4v1715095000000!5m2!1sid!2sid" 
+        width="100%" 
+        height="350" 
+        style="border:0;" 
+        allowfullscreen="" 
+        loading="lazy" 
+        referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+    </div>
     </main>
+    <footer class="mt-12 py-8 text-center text-gray-500 border-t bg-white">
+    <p class="text-sm">&copy; 2026 Kelompok 1 PPLG - RS Kanujoso Balikpapan</p>
+</footer>
 </body>
 </html>
