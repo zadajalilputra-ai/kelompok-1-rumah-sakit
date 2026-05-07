@@ -27,7 +27,6 @@ ul {
   list-style: none;
 }
 
-/* ===== NAVBAR ===== */
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -49,9 +48,12 @@ ul {
 .nav-list {
   display: flex;
   gap: 32px;
+  margin-left: auto;
+  margin-right: 24px;
 }
 
 .nav-list a {
+  display: flex;
   font-size: 15px;
   color: #333333;
   transition: color 0.3s;
@@ -74,7 +76,6 @@ ul {
   background-color: #0052a3;
 }
 
-/* ===== HERO / OPEN ===== */
 .open {
   display: flex;
   flex-direction: column;
